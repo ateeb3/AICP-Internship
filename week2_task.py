@@ -15,37 +15,27 @@ def display_schedule():
     for index in range(0, 4):
         if departure_seats[index] != 0:
             print(
-                "Journey No:",
-                index + 1,
-                "| Departure Hour:",
-                departure_times[index],
-                "\t| Tickets available:",
-                departure_seats[index],
+                "Journey No:",index + 1,
+                "| Departure Hour:",departure_times[index],
+                "\t| Tickets available:",departure_seats[index],
             )
         else:
             print(
-                "Journey No:",
-                index + 1,
-                "| Departure Hour:",
-                departure_times[index],
+                "Journey No:", index + 1,
+                "| Departure Hour:",departure_times[index],
                 "\t| Closed!",
             )
 
         if return_seats[index] != 0:
             print(
-                "Journey No:",
-                index + 1,
-                "| Return Hour:",
-                return_times[index],
-                "\t| Tickets available:",
-                return_seats[index],
+                "Journey No:",index + 1,
+                "| Return Hour:", return_times[index],
+                "\t| Tickets available:",return_seats[index],
             )
         else:
             print(
-                "Journey No:",
-                index + 1,
-                "| Return Hour:",
-                return_times[index],
+                "Journey No:", index + 1,
+                "| Return Hour:",return_times[index],
                 "\t| Closed!",
             )
         print()
@@ -74,12 +64,9 @@ while choice.lower() != "no":
     print("\n\t\t Return Hours Available\n")
     for num in range(up_trip, 4):
         print(
-            "Journey No:",
-            num + 1,
-            " | Return Hour:",
-            return_times[num],
-            " | Remaining Tickets:",
-            return_seats[num],
+            "Journey No:",num + 1,
+            " | Return Hour:",return_times[num],
+            " | Remaining Tickets:",return_seats[num],
         )
     print()
     down_trip = int(input("Enter Journey number for your chosen Return hour: ")) - 1
@@ -135,26 +122,16 @@ print("END OF THE DAY")
 print("\n")
 for count in range(0, 4):
     print(
-        "Journey No:",
-        count + 1,
-        "\t| Departure Hour:",
-        departure_times[count],
-        "\t| Number of passengers:",
-        departure_passengers[count],
-        "\t| Total money: $",
-        departure_money_total[count],
-        sep="",
+        "Journey No:",count + 1,
+        "\t| Departure Hour:",departure_times[count],
+        "\t| Number of passengers:",departure_passengers[count],
+        "\t| Total money: $",departure_money_total[count],sep="",
     )
     print(
-        "Journey No:",
-        count + 1,
-        "\t| Return Hour:",
-        return_times[count],
-        "\t| Number of passengers:",
-        return_passengers[count],
-        "\t| Total money: $",
-        return_money_total[count],
-        sep="",
+        "Journey No:",count + 1,
+        "\t| Return Hour:",return_times[count],
+        "\t| Number of passengers:",return_passengers[count],
+        "\t| Total money: $",return_money_total[count],sep="",
     )
 
 
