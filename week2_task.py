@@ -1,4 +1,3 @@
-
 departure_times = ["09:00", "11:00", "13:00", "15:00"]
 departure_seats = [480, 480, 480, 480]
 departure_passengers = [0, 0, 0, 0]
