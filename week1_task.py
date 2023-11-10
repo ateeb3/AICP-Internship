@@ -1,4 +1,3 @@
-
 category = ["Case", "RAM", "Main Hard Disk Drive", "Solid State Drive", "Second Hard Disk Drive", "Optical Drive", "Operating System"]
 item_codes = [["A1", "A2"], ["B1", "B2", "B3"], ["C1", "C2", "C3"], ["D1", "D2"], ["E1", "E2", "E3"], ["F1", "F2"], ["G1", "G2"]]
 descriptions = [["Compact", "Tower"], ["8 GB", "16 GB", "32 GB"], ["1 TB HDD", "2 TB HDD", "4 TB HDD"], ["240 GB SSD", "480 GB SSD"], ["1 TB HDD", "2 TB HDD", "4 TB HDD"], ["DVD/Blu-Ray Player", "DVD/Blu-Ray Re-writer"], ["Standard Version", "Professional Version"]]
