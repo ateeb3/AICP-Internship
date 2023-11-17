@@ -1,29 +1,30 @@
 electricity_matrix = [
-    [550,  650,  750],
-    [1800, 2250, 2250],
-    [4200, 4600, 4800],
+    [50, 150, 250],
+    [80, 120, 180],
 ]
 
 
 def costSlab1():
-    print("Bill for Slab 1 is :")
-    for value in electricity_matrix[0]:
-        print(value, end="\t")
+    slab1_units = min(electricity_matrix[0][0], 100)
+    slab1_cost = slab1_units * 10
+    print(f"Bill for Slab 1 is : \n{slab1_cost}\t\t{electricity_matrix[0][1]}\t\t{electricity_matrix[0][2]}")
+
+
 def costSlab2():
-    print("\nBill for Slab 2 is :")
-    for value in electricity_matrix[1]:
-        print(value, end="\t")
+    slab2_units = max(min(electricity_matrix[0][1], 200) - 100, 0)
+    slab2_cost = slab2_units * 15
+    print(f"Bill for Slab 2 is : \n{electricity_matrix[0][1]}\t\t{slab2_cost}\t\t{electricity_matrix[0][2]}")
 
 
 def costSlab3():
-    print("Bill for Slab 3 is :")
-    for value in electricity_matrix[2]:
-        print(value, end="\t")
+    slab3_units = max(electricity_matrix[0][2] - 200, 0)
+    slab3_cost = slab3_units * 20
+    print(f"Bill for Slab 3 is : \n{electricity_matrix[0][2]}\t\t{electricity_matrix[0][2]}\t\t{slab3_cost}")
 
 
 def main_menu(student_id):
     while True:
-        print(f"\n\n\nMy Student ID is {student_id}")
+        print(f"\n\nMy Student ID is {student_id}")
         print("Enter your choice:")
         print("Press 1 to display the bill of slab 1 and slab 2.")
         print("Press 2 to display the bill of slab 3.")
