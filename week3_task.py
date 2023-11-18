@@ -1,26 +1,27 @@
 electricity_matrix = [
-    [50, 150, 250],
-    [80, 120, 180],
+    [55, 65, 75],
+    [120, 150, 170],
+    [210, 230, 240],
 ]
 
-
 def costSlab1():
-    slab1_units = min(electricity_matrix[0][0], 100)
-    slab1_cost = slab1_units * 10
-    print(f"Bill for Slab 1 is : \n{slab1_cost}\t\t{electricity_matrix[0][1]}\t\t{electricity_matrix[0][2]}")
-
+    slab1_units = electricity_matrix[0]
+    slab1_cost = [i*10 for i in slab1_units]
+    print(f"Bill for Slab 1 is :")
+    print(*slab1_cost , sep="\t\t")
 
 def costSlab2():
-    slab2_units = max(min(electricity_matrix[0][1], 200) - 100, 0)
-    slab2_cost = slab2_units * 15
-    print(f"Bill for Slab 2 is : \n{electricity_matrix[0][1]}\t\t{slab2_cost}\t\t{electricity_matrix[0][2]}")
+    slab2_units = electricity_matrix[1]
+    slab2_cost = [i*15 for i in slab2_units]
+    print("Bill for Slab 2 is :")
+    print(*slab2_cost , sep="\t")
 
 
 def costSlab3():
-    slab3_units = max(electricity_matrix[0][2] - 200, 0)
-    slab3_cost = slab3_units * 20
-    print(f"Bill for Slab 3 is : \n{electricity_matrix[0][2]}\t\t{electricity_matrix[0][2]}\t\t{slab3_cost}")
-
+    slab3_units = electricity_matrix[2]
+    slab3_cost = [i * 20 for i in slab3_units]
+    print("Bill for Slab 3 is :")
+    print(*slab3_cost , sep="\t")
 
 def main_menu(student_id):
     while True:
