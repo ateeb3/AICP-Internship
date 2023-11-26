@@ -16,7 +16,7 @@ def displayHexagon():
 
 
 def calcAreaSquare():
-    return one_side_of_square * 2
+    return one_side_of_square**2
 def calcPeriSquare():
     return one_side_of_square * 4
 
